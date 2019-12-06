@@ -1,0 +1,45 @@
+/* Start countdown clock */
+.countdown {
+    font-family: 'Titillium Web', cursive;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background: #222;
+    font-weight: 100;
+    display: inline-block;
+    line-height: 1;
+    padding: 20px;
+    font-size: 40px;
+}
+
+span {
+    display: inline;
+    font-size: 20px;
+    color: white;
+}
+
+#days-countdown {
+    font-size: 100px;
+    color: #db4844;
+}
+#hours-countdown {
+    font-size: 100px;
+    color: #f07c22;
+}
+#minutes-countdown {
+    font-size: 100px;
+    color: #f6da74;
+}
+#seconds-countdown {
+    font-size: 50px;
+    color: #abcd58;
+}
+
+.select-countdown {
+    background-color: #84ceeb;
+    position: relative;
+    font-family: 'Titillium Web', cursive;
+}
+
+/* End countdown clock */
