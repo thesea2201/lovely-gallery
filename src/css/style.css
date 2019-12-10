@@ -56,7 +56,7 @@ span {
 /* Fit resize image */
 .carousel-img {
     width: auto;
-    max-height: 100%;
+    height: 4000px;
 }
 
 .data-carousel-3d {
