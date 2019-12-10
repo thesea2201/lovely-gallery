@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="src/css/style.css">
 
   <!--<script src="http://localhost:35729/livereload.js"></script>-->
-  <!-- <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/jquery/jquery.js"></script>
   <script src="bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
   <script src="bower_components/waitForImages/dist/jquery.waitforimages.js"></script>
   <script src="bower_components/modernizr/modernizr.js"></script>
-  <script src="dist/jquery.carousel-3d.js"></script> -->
+  <script src="dist/jquery.carousel-3d.js"></script>
 
   <script src="src/js/jquery.js"></script>
   <script src="src/js/jquery.countdown.js"></script>
@@ -19,24 +19,15 @@
   <script src="src/js/jquery.min.js"></script>
   <script src="src/js/sfuntion.js"></script>
 
-  <style>
-    html, body {
-      margin: 0px;
-    }
-    .wrapper {
-      width: 100%;
-    }
-  </style>
 </head>
 <body>
-<!-- <div class="wrapper">
-  <iframe src="audio/Silent.wav" allow="autoplay" id="audio" style="display:none"></iframe>
-  <audio id="player" autoplay loop>
+<div class="wrapper">
+  <audio id="player"  loop>
       <source src="audio/Perfect-BoyceAvenue.mp3" download type="audio/mp3">
   </audio>
-  <div data-carousel-3d>
-    <img src="image/1.jpg" selected />
-    <div style="min-width: 320px; min-height: 213px; max-width: 320px; max-height: 213px"> -->
+  <div data-carousel-3d class="data-carousel-3d">
+    <img class="carousel-img" src="image/1.jpg" selected/>
+    <div style="min-width: 320px; min-height: 213px; max-width: 320px; max-height: 213px">
       <!-- <p style="background-color:black; color:white; margin:20px; padding:20px;">A simple html child</p>
       <div style="background-color:gray; color:white;">Html contents also works ok!!!</div>
       <div>The quick brown fox jumps over the lazy dog</div>
@@ -44,17 +35,17 @@
         Make the fox
         <button type="button" onclick="alert('Jump!!');">jump</button>
       </p> -->
-    <!-- </div>
-    <img src="image/3.jpg" />
-    <img src="image/4.jpg" />
-    <img src="image/5.jpg" />
-    <img src="image/6.jpg" />
-    <img src="image/7.jpg" />
-    <img src="image/8.jpg" />
-    <img src="image/9.jpg" />
-    <img src="image/10.jpg" />
+    </div>
+    <img class="carousel-img" src="image/3.jpg" />
+    <img class="carousel-img" src="image/4.jpg" />
+    <img class="carousel-img" src="image/5.jpg" />
+    <img class="carousel-img" src="image/6.jpg" />
+    <img class="carousel-img" src="image/7.jpg" />
+    <img class="carousel-img" src="image/8.jpg" />
+    <img class="carousel-img" src="image/9.jpg" />
+    <img class="carousel-img" src="image/10.jpg" />
   </div>
-</div> -->
+</div>
 <div class="countdown">
   <select class="select-countdown" name="choose-day" id="select-countdown">
     <option value="22 January year 0:0:00 GMT+07:00" selected>22 January</option>

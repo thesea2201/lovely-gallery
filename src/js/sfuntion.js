@@ -1,5 +1,6 @@
 $(document).ready(function() {
     clockCountdown();
+    changeImageSource();
 
 });
 
@@ -10,12 +11,12 @@ function clockCountdown(){
     var yearNext = yearNow + 1;
 
     nowTime = (Date.parse(now) / 1000);	
-    endThisYear = end.replace("year", yearNow);console.log(end, endThisYear);
+    endThisYear = end.replace("year", yearNow);
     endTime = (Date.parse(endThisYear) / 1000);
 
     var timeLeft = endTime - nowTime;
     if(timeLeft < 0){
-        endNextYear = end.replace("year", yearNext);console.log(end, endNextYear);
+        endNextYear = end.replace("year", yearNext);
         endTime = (Date.parse(endNextYear) / 1000);
         timeLeft = endTime - nowTime;
     }
@@ -35,4 +36,20 @@ function clockCountdown(){
     $("#seconds-countdown").html(seconds + "<span>Seconds</span>");		
 
 	setInterval(function() { clockCountdown(); }, 1000);
+}
+
+function changeImageSource(){
+    $('#select-countdown').change(function(){
+        var end = $('#select-countdown').val();console.log(end.indexOf('04 October'));
+        if(end.indexOf('04 October') != -1){
+            $('#hours-countdown').bind().on('click', function() {
+                var images = $('.data-carousel-3d').find('img');
+                images.each(function(){
+                    var src = $(this).attr('src');console.log(src);
+                    src = src.replace('image', 'loveImage');console.log(src);
+                    $(this).attr('src', src);
+                })
+            });
+        }
+    });
 }

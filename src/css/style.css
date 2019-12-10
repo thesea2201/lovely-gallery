@@ -1,3 +1,12 @@
+/* Default */
+html, body {
+    margin: 0px;
+    }
+    .wrapper {
+    width: 100%;
+    }
+/* End default */
+
 /* Start countdown clock */
 .countdown {
     font-family: 'Titillium Web', cursive;
@@ -43,3 +52,13 @@ span {
 }
 
 /* End countdown clock */
+
+/* Fit resize image */
+.carousel-img {
+    width: auto;
+    max-height: 100%;
+}
+
+.data-carousel-3d {
+    text-align: center;
+}
